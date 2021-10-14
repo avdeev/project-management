@@ -9,15 +9,16 @@
         .shower {
             --slide-ratio: calc(16 / 9);
             --ribbon-size: 40px;
+			--slide-side: 41px;
         }
 
         .progress::before {
-			background-color: #ff4141;
+			background-color: #ff0000;
         }
 
         .slide {
             padding-top: 51px;
-            background-image: url("pictures/fc21-cover.png");
+            background-image: url("pictures/slide-cover.png");
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: center;
@@ -28,10 +29,10 @@
         }
 
         .slide::after {
-            top: auto;
-			bottom: 0px;
-			left: 20px;
-            right: auto;
+			top: auto;
+			bottom: 10px;
+			left: auto;
+			right: 30px;
             background: none;
 			color: #000;
         }
@@ -43,7 +44,18 @@
 
         .slide h2.shout {
 			font-size: 120px;
+			transform: translate(-50%, -50%);
+			left: 50%;
+			width: 80%;
         }
+
+		.slide h2.shout.brand {
+			color: #ff0000;
+		}
+
+		.slide ol, .slide ul {
+			padding-left: 40px;
+		}
 
 		.slide li {
 			font-size: 28px;
@@ -72,8 +84,11 @@
             <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
         </div>
         <style>
+			.shower #cover {
+				--slide-side: 60px;
+			}
             #cover {
-				background: #fff url("pictures/fc21-title.png") no-repeat center center;
+				background: #fff url("pictures/title-cover.png") no-repeat center center;
 				background-size: contain;
             }
             #cover h2 {
@@ -113,28 +128,23 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Выбираем методологию</h2>
-    </section>
-
-    <section class="slide">
-        <h2 class="shout">Agile</h2>
-    </section>
-
-    <section class="slide">
-        <h2 class="shout">SCRUM</h2>
-    </section>
-
-    <section class="slide">
-        <img class="cover h" src="pictures/ussr.jpeg" alt="">
-    </section>
-
-    <section class="slide">
-        <h2>Scrum-команда</h2>
+        <h2>Модели</h2>
 		<ol>
-			<li>Команда разработки</li>
-			<li>Владелец продукта</li>
-			<li>SCRUM-мастер</li>
+			<li>Каскадная</li>
+			<li>Итеративная (инкрементальная)</li>
+			<li>Спиральная</li>
+			<li>V-Model</li>
+			<li>Cleanroom</li>
+			<li>Agile</li>
 		</ol>
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/img-oBsxBV.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Выбираем методологию</h2>
     </section>
 
     <section class="slide">
@@ -142,19 +152,310 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Покер планирования</h2>
+        <h2 class="shout brand">Перерыв</h2>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Kanban</h2>
+        <h2 class="shout brand">Agile</h2>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Kanban</h2>
+        <h2 class="shout">Agile-манифест</h2>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Заботьтесь о&nbsp;пользователях</h2>
+        <img class="cover h" src="pictures/agile-manifest.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Основополагающие принципы</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Основополагающие принципы (1)</h2>
+		<p style="font-size: 35px;">Наивысшим приоритетом для нас является удовлетворение потребностей заказчика, благодаря регулярной и ранней поставке ценного программного обеспечения.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Основополагающие принципы (2)</h2>
+		<p style="font-size: 35px;">Изменение требований приветствуется, даже на поздних стадиях разработки. Agile-процессы позволяют использовать изменения для обеспечения заказчику конкурентного преимущества.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Основополагающие принципы (3)</h2>
+		<p style="font-size: 35px;">Работающий продукт следует выпускать как можно чаще, с периодичностью от пары недель до пары месяцев.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Основополагающие принципы (4)</h2>
+		<p style="font-size: 35px;">На протяжении всего проекта разработчики и представители бизнеса должны ежедневно работать вместе.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Основополагающие принципы (5)</h2>
+		<p style="font-size: 35px;">Над проектом должны работать мотивированные профессионалы. Чтобы работа была сделана, создайте условия, обеспечьте поддержку и полностью доверьтесь им.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Основополагающие принципы (6)</h2>
+		<p style="font-size: 35px;">Непосредственное общение является наиболее практичным и эффективным способом обмена информацией как с самой командой, так и внутри команды.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Основополагающие принципы (7)</h2>
+		<p style="font-size: 35px;">Работающий продукт — основной показатель прогресса.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Основополагающие принципы (8)</h2>
+		<p style="font-size: 35px;">Инвесторы, разработчики и пользователи должны иметь возможность поддерживать постоянный ритм бесконечно. Agile помогает наладить такой устойчивый процесс разработки.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Основополагающие принципы (9)</h2>
+		<p style="font-size: 35px;">Постоянное внимание к техническому совершенству и качеству проектирования повышает гибкость проекта.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Основополагающие принципы (10)</h2>
+		<p style="font-size: 35px;">Простота — искусство минимизации лишней работы — крайне необходима.</p>
+    </section>
+
+	<section class="slide">
+        <h2>Основополагающие принципы (11)</h2>
+		<p style="font-size: 35px;">Самые лучшие требования, архитектурные и технические решения рождаются у самоорганизующихся команд.</p>
+    </section>
+
+	<section class="slide">
+        <h2>Основополагающие принципы (12)</h2>
+		<p style="font-size: 35px;">Команда должна систематически анализировать возможные способы улучшения эффективности и соответственно корректировать стиль своей работы.</p>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">Lean</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">XP</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">Kanban</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">SCRUM</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/scrumguide.png" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/2560px-Scrum_process-ru.svg.png" alt="" style="width: 70%;">
+    </section>
+
+    <section class="slide">
+        <h2>SCRUM-команда</h2>
+		<ol>
+			<li>Команда разработки</li>
+			<li class="next">Владелец продукта</li>
+			<li class="next">SCRUM-мастер</li>
+		</ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">Артефакты SCRUM</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Диаграмма сгорания задач</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Бэклог проекта</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Бэклог спринта</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Scrum-доска</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Цель спринта</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Инкремент продукта</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">История пользователя</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Оценка трудоёмкости</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Оценка трудоёмкости</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Definition of Done</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Скорость команды</h2>
+    </section>
+
+    <section class="slide">
+        <h2>SCRUM-команда</h2>
+		<ol>
+			<li>Команда разработки</li>
+			<li class="next">Владелец продукта</li>
+			<li class="next">SCRUM-мастер</li>
+		</ol>
+    </section>
+
+    <section class="slide">
+        <h2>SCRUM-встречи</h2>
+		<ol>
+			<li>Планирование спринта</li>
+			<li class="next">Ежедневное собрание команды</li>
+			<li class="next">Обзор спринта</li>
+			<li class="next">Ретроспектива спринта</li>
+		</ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Планирование спринта</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/147-gut-feeling.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Ежедневное собрание команды</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/Daily_sprint_meeting.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/dc5b6bb0ad8993cb817e5d8372a52bb8.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/Cjw8e8KVEAIo9JO.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Обзор спринта</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Ретроспектива спринта</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/14-retrospective-accesories.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Покер<br>планирования</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/HOBA-Agile-Planning-Poker-Playcards.jpeg" alt="">
+    </section>
+
+	<section class="slide" id="6">
+        <h2 class="shout">
+            <img src="pictures/qrcode_planningpokeronline.com.png" alt="" style="width: 40%; margin-bottom: -40px; margin-top: -110px;">
+            <br>
+            <a href="https://planningpokeronline.com/" style="font-size: 0.8em;">planningpokeronline.com</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Ретроспектива спринта</h2>
+    </section>
+
+	<section class="slide" id="6">
+        <h2 class="shout">
+            <img src="pictures/qrcode_www.teamretro.com.png" alt="" style="width: 40%; margin-bottom: -40px; margin-top: -110px;">
+            <br>
+            <a href="https://www.teamretro.com/" style="font-size: 0.8em;">teamretro.com</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">Недостатки SCRUM</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/146-applied-scrum.png" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/125-sprint.png" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/188-adjustment.png" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/107-applied-tdd.png" alt="">
+    </section>
+
+	<section class="slide">
+        <img class="cover h" src="pictures/174-estimates.png" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/16021f3e784bc3d096a6f69c4f6dda7f.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/ussr.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>SCRUMbut</h2>
+		<ol>
+			<li>Дейли не каждый день</li>
+			<li class="next">Нет ретро</li>
+			<li class="next">Длинные спринты</li>
+			<li class="next">Нет Definition Of Done</li>
+		</ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">SCRUM vs. Waterfall</h2>
+    </section>
+
+	<section class="slide">
+        <img class="cover h" src="pictures/1_2Qg44xBA1T_LJC5HWkU2Rw.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Выбирайте методологии правильно</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Домашняя работа</h2>
+		<ol>
+			<li>Создайте бэклог вашего продукта</li>
+			<li class="next">Оцените его при помощи покера планирования</li>
+			<li class="next">Отправьте его на проверку преподавателю</li>
+		</ol>
     </section>
 
     <section class="slide">
