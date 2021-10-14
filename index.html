@@ -9,15 +9,16 @@
         .shower {
             --slide-ratio: calc(16 / 9);
             --ribbon-size: 40px;
+			--slide-side: 41px;
         }
 
         .progress::before {
-			background-color: #ff4141;
+			background-color: #ff0000;
         }
 
         .slide {
             padding-top: 51px;
-            background-image: url("pictures/fc21-cover.png");
+            background-image: url("pictures/slide-cover.png");
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: center;
@@ -28,10 +29,10 @@
         }
 
         .slide::after {
-            top: auto;
-			bottom: 0px;
-			left: 20px;
-            right: auto;
+			top: auto;
+			bottom: 10px;
+			left: auto;
+			right: 30px;
             background: none;
 			color: #000;
         }
@@ -43,7 +44,14 @@
 
         .slide h2.shout {
 			font-size: 120px;
+			transform: translate(-50%, -50%);
+			left: 50%;
+			width: 80%;
         }
+
+		.slide ol, .slide ul {
+			padding-left: 40px;
+		}
 
 		.slide li {
 			font-size: 28px;
@@ -72,8 +80,11 @@
             <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
         </div>
         <style>
+			.shower #cover {
+				--slide-side: 60px;
+			}
             #cover {
-				background: #fff url("pictures/fc21-title.png") no-repeat center center;
+				background: #fff url("pictures/title-cover.png") no-repeat center center;
 				background-size: contain;
             }
             #cover h2 {
@@ -117,7 +128,15 @@
     </section>
 
     <section class="slide">
+        <h2 class="shout">Перерыв</h2>
+    </section>
+
+    <section class="slide">
         <h2 class="shout">Agile</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Kanban</h2>
     </section>
 
     <section class="slide">
@@ -132,8 +151,8 @@
         <h2>Scrum-команда</h2>
 		<ol>
 			<li>Команда разработки</li>
-			<li>Владелец продукта</li>
-			<li>SCRUM-мастер</li>
+			<li class="next">Владелец продукта</li>
+			<li class="next">SCRUM-мастер</li>
 		</ol>
     </section>
 
@@ -142,7 +161,11 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Покер планирования</h2>
+        <h2 class="shout">Покер<br>планирования</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/HOBA-Agile-Planning-Poker-Playcards.jpeg" alt="">
     </section>
 
     <section class="slide">
@@ -150,11 +173,16 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Kanban</h2>
+        <h2 class="shout">Выбирайте методологии правильно</h2>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Заботьтесь о&nbsp;пользователях</h2>
+        <h2>Домашняя работа</h2>
+		<ol>
+			<li>Создайте доску с задачами вашего проекта</li>
+			<li class="next">Владелец продукта</li>
+			<li class="next">SCRUM-мастер</li>
+		</ol>
     </section>
 
     <section class="slide">
