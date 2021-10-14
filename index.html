@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Методологии управления проектами</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+            --ribbon-size: 40px;
+        }
+
+        .progress::before {
+			background-color: #ff4141;
+        }
+
+        .slide {
+            padding-top: 51px;
+            background-image: url("pictures/fc21-cover.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+
+        .slide.clear {
+            background-image: none;
+        }
+
+        .slide::after {
+            top: auto;
+			bottom: 0px;
+			left: 20px;
+            right: auto;
+            background: none;
+			color: #000;
+        }
+
+		.slide h2 {
+			color: #000;
+			font-size: 60px;
+		}
+
+        .slide h2.shout {
+			font-size: 120px;
+        }
+
+		.slide li {
+			font-size: 28px;
+		}
+
+		.slide pre {
+			font-size: 30px;
+		}
+
+		.cover {
+			z-index: 1;
+		}
+    </style>
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Методологии управления проектами</h1>
+        <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
+    </header>
+
+    <section class="slide clear" id="cover">
+        <div style="width: 640px; padding-top: 30px; margin-left: -10px;">
+            <h2>Методологии управления проектами</h2>
+            <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
+        </div>
+        <style>
+            #cover {
+				background: #fff url("pictures/fc21-title.png") no-repeat center center;
+				background-size: contain;
+            }
+            #cover h2 {
+                margin: 0;
+                color: #000;
+                font-size: 62px;
+            }
+            #cover p {
+                margin: 18px 0 0;
+                color: #000;
+                font-size: 24px;
+            }
+            #cover p a {
+                color: #000;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>👨‍💻 О себе</h2>
+
+        <ol>
+            <li>👨 Алексей Авдеев (<a href="https://twitter.com/avdeev_alexey">https://twitter.com/avdeev_alexey</a>)</li>
+            <li class="next">👔 CTO, руковожу разработкой</li>
+            <li class="next">🏙️ Из Нижнего Новгорода, работаю в Москве</li>
+            <li class="next">🌐 <a href="https://mish.design/">Mish.Design</a></li>
+            <li class="next">👴 Программирую с 2002 года</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Методология</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Методологий много</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Выбираем методологию</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Agile</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">SCRUM</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/ussr.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>Scrum-команда</h2>
+		<ol>
+			<li>Команда разработки</li>
+			<li>Владелец продукта</li>
+			<li>SCRUM-мастер</li>
+		</ol>
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/Waterfall_model.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Покер планирования</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Kanban</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Kanban</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Заботьтесь о&nbsp;пользователях</h2>
+    </section>
+
+    <section class="slide">
+        <h2>👏 Спасибо!</h2>
+
+        <ul>
+            <li>👨 Алексей Авдеев</li>
+            <li>🌐 <a href="https://github.com/avdeev">github.com/avdeev</a></li>
+            <li>🌐 <a href="https://twitter.com/avdeev_alexey">twitter.com/avdeev_alexey</a></li>
+			<li>🌐 <a href="https://alexey-avdeev.com/usb-tokens/">alexey-avdeev.com/usb-tokens</a></li>
+            <li>🌐 <a href="https://mish.design/">Mish.Design</a></li>
+        </ul>
+
+        <img src="pictures/iam.jpeg" alt="я" style="height: 250px; position: absolute; right: 55px; top: 141px;">
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+    <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
